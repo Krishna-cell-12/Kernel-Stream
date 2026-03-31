@@ -1,3 +1,5 @@
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/ec5b7438-9891-42b4-be23-d1f4b6db47b4" />
+
 # Kernel-Stream
 ### Real-time Linux process observability from kernel space to browser UI
 
