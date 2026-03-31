@@ -1,0 +1,24 @@
+cd ~/Kernel-Stream
+cat << 'EOF' > .gitignore
+# Python Virtual Environment
+venv/
+__pycache__/
+
+# Compiled Binaries and Objects
+monitor
+*.o
+
+# Generated eBPF headers (These are generated on the fly)
+vmlinux.h
+monitor.skel.h
+
+# Downloaded Source Repositories (We don't want to track these)
+bpftool/
+libbpf/
+
+# Generated gRPC/Protobuf files (Best practice is to generate these on build)
+proto/*.pb.cc
+proto/*.pb.h
+server/*_pb2.py
+server/*_pb2_grpc.py
+EOF

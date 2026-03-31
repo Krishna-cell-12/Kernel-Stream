@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package metrics;
+
+message ProcessMetric {
+  int32 pid = 1;
+  string comm = 2;
+  int64 timestamp = 3;
+}
+
+service MonitorService {
+  rpc SendMetric (ProcessMetric) returns (google.protobuf.Empty);
+}
+
