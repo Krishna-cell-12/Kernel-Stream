@@ -1,4 +1,7 @@
 grpcio
 grpcio-tools
 protobuf
+flask
+flask-socketio
+flask-cors
 

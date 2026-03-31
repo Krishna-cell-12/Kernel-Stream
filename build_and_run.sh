@@ -11,7 +11,7 @@ fi
 source "venv/bin/activate"
 
 python3 -m pip install --upgrade pip
-python3 -m pip install grpcio-tools grpcio protobuf
+python3 -m pip install -r server/requirements.txt
 
 python3 -m grpc_tools.protoc \
   -Iproto \
